@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bus Schedule</string>
+    <string name="stop_name">Stop Name</string>
+    <string name="arrival_time">Arrival Time</string>
+</resources>
