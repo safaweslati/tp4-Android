@@ -2,4 +2,6 @@
     <string name="app_name">Bus Schedule</string>
     <string name="stop_name">Stop Name</string>
     <string name="arrival_time">Arrival Time</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

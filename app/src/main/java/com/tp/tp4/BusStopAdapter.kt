@@ -8,7 +8,8 @@ import com.tp.tp4.database.entities.Schedule
 import java.text.SimpleDateFormat
 import java.util.*
 
-class BusStopAdapter(private var scheduleList: List<Schedule>,private val onItemClick: (Schedule) -> Unit) :
+class BusStopAdapter( private var scheduleList: List<Schedule> = emptyList(),
+                      private val onItemClick: (Schedule) -> Unit = {}) :
     RecyclerView.Adapter<BusStopAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

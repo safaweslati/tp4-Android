@@ -34,13 +34,7 @@ class DetailsActivity : AppCompatActivity() {
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
         val stopName = intent.getStringExtra("stopName")
-        busStopAdapter = BusStopAdapter(emptyList()) { schedule ->
-            Toast.makeText(
-                this,
-                "Clicked on item: StopName = ${schedule.stop_name}, ArrivalTime = ${schedule.arrival_time}",
-                Toast.LENGTH_SHORT
-            ).show()
-        }
+        busStopAdapter = BusStopAdapter()
         recyclerView.adapter = busStopAdapter
 
         viewModel.scheduleForStopName(stopName.orEmpty()).observe(this) {
